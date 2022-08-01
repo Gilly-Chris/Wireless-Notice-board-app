@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="20dp"
+            android:gravity="center_horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Display document on the Board!!"
+                android:textColor="@color/app_color"
+                android:textSize="32sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/upload_docsBtn"
+                android:layout_marginTop="55dp"
+                android:paddingVertical="17dp"
+                android:text="Upload an Document"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:paddingHorizontal="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#0099ff"
+                android:background="@drawable/btn_background"/>
+
+            <TextView
+                android:id="@+id/documentName"
+                android:text="Document Name"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/priority"
+                android:layout_marginTop="20dp"
+                android:textColor="?attr/colorError"
+                android:layout_gravity="start"
+                android:text="Display instantly(Urgent message)  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/delay"
+                android:layout_marginTop="15dp"
+                android:textColor="?attr/colorPrimaryDark"
+                android:layout_gravity="start"
+                android:text="Add 5 seconds delay  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sendDocsBtn"
+                android:layout_marginTop="30dp"
+                android:paddingVertical="17dp"
+                android:text="Send"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:paddingHorizontal="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#0099ff"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

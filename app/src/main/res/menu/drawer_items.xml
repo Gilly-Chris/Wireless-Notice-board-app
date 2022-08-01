@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/send_text_fragment"
+            android:icon="@drawable/ic_message"
+            android:title="Display Text" />
+        <item
+            android:id="@+id/send_image_fragment"
+            android:icon="@drawable/ic_image"
+            android:title="Display Image" />
+        <item
+            android:id="@+id/send_document_fragment"
+            android:icon="@drawable/ic_document"
+            android:title="Display Document" />
+        <item
+            android:id="@+id/send_video_fragment"
+            android:icon="@drawable/ic_baseline_videocam_24"
+            android:title="Display Video" />
+        <item android:title="Sub items">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/logout"
+                        android:icon="@drawable/ic_out"
+                        android:title="Logout" />
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>
